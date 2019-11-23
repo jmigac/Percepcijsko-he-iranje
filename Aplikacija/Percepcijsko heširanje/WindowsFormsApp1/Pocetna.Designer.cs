@@ -38,6 +38,13 @@
             this.btnDifferenceHash = new System.Windows.Forms.Button();
             this.btnPerceptualHash = new System.Windows.Forms.Button();
             this.btnWaveletHash = new System.Windows.Forms.Button();
+            this.lblHashPrveSlike = new System.Windows.Forms.Label();
+            this.lblHashDrugeSlike = new System.Windows.Forms.Label();
+            this.lblIstiBitovi = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblRazliciti1 = new System.Windows.Forms.Label();
+            this.lblRazliciti2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlika1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlika2)).BeginInit();
             this.SuspendLayout();
@@ -130,11 +137,80 @@
             this.btnWaveletHash.Text = "Wavelet Hash";
             this.btnWaveletHash.UseVisualStyleBackColor = true;
             // 
+            // lblHashPrveSlike
+            // 
+            this.lblHashPrveSlike.AutoSize = true;
+            this.lblHashPrveSlike.Location = new System.Drawing.Point(13, 337);
+            this.lblHashPrveSlike.Name = "lblHashPrveSlike";
+            this.lblHashPrveSlike.Size = new System.Drawing.Size(83, 13);
+            this.lblHashPrveSlike.TabIndex = 8;
+            this.lblHashPrveSlike.Text = "Hash prve slike:";
+            // 
+            // lblHashDrugeSlike
+            // 
+            this.lblHashDrugeSlike.AutoSize = true;
+            this.lblHashDrugeSlike.Location = new System.Drawing.Point(13, 360);
+            this.lblHashDrugeSlike.Name = "lblHashDrugeSlike";
+            this.lblHashDrugeSlike.Size = new System.Drawing.Size(89, 13);
+            this.lblHashDrugeSlike.TabIndex = 8;
+            this.lblHashDrugeSlike.Text = "Hash druge slike:";
+            // 
+            // lblIstiBitovi
+            // 
+            this.lblIstiBitovi.AutoSize = true;
+            this.lblIstiBitovi.Location = new System.Drawing.Point(13, 384);
+            this.lblIstiBitovi.Name = "lblIstiBitovi";
+            this.lblIstiBitovi.Size = new System.Drawing.Size(51, 13);
+            this.lblIstiBitovi.TabIndex = 8;
+            this.lblIstiBitovi.Text = "Isti bitovi:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 407);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Različiti bitovi:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(96, 407);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.TabIndex = 9;
+            // 
+            // lblRazliciti1
+            // 
+            this.lblRazliciti1.AutoSize = true;
+            this.lblRazliciti1.Location = new System.Drawing.Point(93, 407);
+            this.lblRazliciti1.Name = "lblRazliciti1";
+            this.lblRazliciti1.Size = new System.Drawing.Size(32, 13);
+            this.lblRazliciti1.TabIndex = 8;
+            this.lblRazliciti1.Text = "bitovi";
+            // 
+            // lblRazliciti2
+            // 
+            this.lblRazliciti2.AutoSize = true;
+            this.lblRazliciti2.Location = new System.Drawing.Point(93, 428);
+            this.lblRazliciti2.Name = "lblRazliciti2";
+            this.lblRazliciti2.Size = new System.Drawing.Size(32, 13);
+            this.lblRazliciti2.TabIndex = 8;
+            this.lblRazliciti2.Text = "bitovi";
+            // 
             // Pocetna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(452, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblRazliciti2);
+            this.Controls.Add(this.lblRazliciti1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblIstiBitovi);
+            this.Controls.Add(this.lblHashDrugeSlike);
+            this.Controls.Add(this.lblHashPrveSlike);
             this.Controls.Add(this.btnWaveletHash);
             this.Controls.Add(this.btnPerceptualHash);
             this.Controls.Add(this.btnDifferenceHash);
@@ -147,6 +223,7 @@
             this.Controls.Add(this.pbSlika1);
             this.Name = "Pocetna";
             this.Text = "Percepcijsko heširanje";
+            this.Load += new System.EventHandler(this.Pocetna_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbSlika1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlika2)).EndInit();
             this.ResumeLayout(false);
@@ -166,6 +243,13 @@
         private System.Windows.Forms.Button btnDifferenceHash;
         private System.Windows.Forms.Button btnPerceptualHash;
         private System.Windows.Forms.Button btnWaveletHash;
+        private System.Windows.Forms.Label lblHashPrveSlike;
+        private System.Windows.Forms.Label lblHashDrugeSlike;
+        private System.Windows.Forms.Label lblIstiBitovi;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblRazliciti1;
+        private System.Windows.Forms.Label lblRazliciti2;
     }
 }
 
