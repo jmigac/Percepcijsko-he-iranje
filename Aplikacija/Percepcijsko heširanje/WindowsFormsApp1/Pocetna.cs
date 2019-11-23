@@ -16,6 +16,8 @@ namespace WindowsFormsApp1
         private bool ucitanaDrugaSlika;
         private Slika slika1;
         private Slika slika2;
+        private Bitmap bmpSlika1;
+        private Bitmap bmpSlika2;
         public Pocetna()
         {
             InitializeComponent();
@@ -37,6 +39,12 @@ namespace WindowsFormsApp1
                 btnWaveletHash.Enabled = true;
             }
         }
+        private void PrikaziUcitanuSliku(Slika slika, PictureBox pictureBox,Bitmap bitmap)
+        {
+            bitmap = new Bitmap(slika.GetPutanjaSlike());
+            pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox.Image = bitmap;
+        }
         private void btnUcitajSliku1_Click(object sender, EventArgs e)
         {
             slika1 = new Slika();
@@ -50,6 +58,7 @@ namespace WindowsFormsApp1
                     slika1.SetPutanjaSlike(ucitajSliku.FileName);
                     ucitanaPrvaSlika = true;
                     ProvjeriUcitaneSlike();
+                    PrikaziUcitanuSliku(slika1, pbSlika1, bmpSlika1);
                 }
             }
         }
@@ -67,6 +76,7 @@ namespace WindowsFormsApp1
                     slika2.SetPutanjaSlike(ucitajSliku.FileName);
                     ucitanaDrugaSlika = true;
                     ProvjeriUcitaneSlike();
+                    PrikaziUcitanuSliku(slika2, pbSlika2, bmpSlika2);
                 }
             }
         }
