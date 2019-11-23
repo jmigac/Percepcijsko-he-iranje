@@ -91,6 +91,7 @@
             this.btnUcitajSliku1.TabIndex = 2;
             this.btnUcitajSliku1.Text = "Ucitaj";
             this.btnUcitajSliku1.UseVisualStyleBackColor = true;
+            this.btnUcitajSliku1.Click += new System.EventHandler(this.btnUcitajSliku1_Click);
             // 
             // btnUcitajSliku2
             // 
@@ -100,9 +101,11 @@
             this.btnUcitajSliku2.TabIndex = 3;
             this.btnUcitajSliku2.Text = "Ucitaj";
             this.btnUcitajSliku2.UseVisualStyleBackColor = true;
+            this.btnUcitajSliku2.Click += new System.EventHandler(this.btnUcitajSliku2_Click);
             // 
             // btnAverageHash
             // 
+            this.btnAverageHash.Enabled = false;
             this.btnAverageHash.Location = new System.Drawing.Point(63, 248);
             this.btnAverageHash.Name = "btnAverageHash";
             this.btnAverageHash.Size = new System.Drawing.Size(75, 59);
@@ -112,6 +115,7 @@
             // 
             // btnDifferenceHash
             // 
+            this.btnDifferenceHash.Enabled = false;
             this.btnDifferenceHash.Location = new System.Drawing.Point(144, 248);
             this.btnDifferenceHash.Name = "btnDifferenceHash";
             this.btnDifferenceHash.Size = new System.Drawing.Size(75, 59);
@@ -121,6 +125,7 @@
             // 
             // btnPerceptualHash
             // 
+            this.btnPerceptualHash.Enabled = false;
             this.btnPerceptualHash.Location = new System.Drawing.Point(225, 248);
             this.btnPerceptualHash.Name = "btnPerceptualHash";
             this.btnPerceptualHash.Size = new System.Drawing.Size(75, 59);
@@ -130,6 +135,7 @@
             // 
             // btnWaveletHash
             // 
+            this.btnWaveletHash.Enabled = false;
             this.btnWaveletHash.Location = new System.Drawing.Point(306, 248);
             this.btnWaveletHash.Name = "btnWaveletHash";
             this.btnWaveletHash.Size = new System.Drawing.Size(75, 59);

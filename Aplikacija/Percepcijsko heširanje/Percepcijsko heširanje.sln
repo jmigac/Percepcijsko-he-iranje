@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29403.142
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prezentacija", "WindowsFormsApp1\Prezentacija.csproj", "{8F66AC63-95E8-474D-B354-577122202258}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoslovnaLogika", "PoslovnaLogika\PoslovnaLogika.csproj", "{956540D7-DD27-4763-B71F-F145A375FF66}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{3E0D393D-B136-4C54-B346-C5E3AA952399}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{8F66AC63-95E8-474D-B354-577122202258}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F66AC63-95E8-474D-B354-577122202258}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F66AC63-95E8-474D-B354-577122202258}.Release|Any CPU.Build.0 = Release|Any CPU
-		{956540D7-DD27-4763-B71F-F145A375FF66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{956540D7-DD27-4763-B71F-F145A375FF66}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{956540D7-DD27-4763-B71F-F145A375FF66}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{956540D7-DD27-4763-B71F-F145A375FF66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E0D393D-B136-4C54-B346-C5E3AA952399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E0D393D-B136-4C54-B346-C5E3AA952399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E0D393D-B136-4C54-B346-C5E3AA952399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E0D393D-B136-4C54-B346-C5E3AA952399}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
