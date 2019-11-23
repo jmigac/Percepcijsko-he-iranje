@@ -51,7 +51,7 @@
             // 
             // pbSlika1
             // 
-            this.pbSlika1.Location = new System.Drawing.Point(13, 37);
+            this.pbSlika1.Location = new System.Drawing.Point(42, 37);
             this.pbSlika1.Name = "pbSlika1";
             this.pbSlika1.Size = new System.Drawing.Size(187, 160);
             this.pbSlika1.TabIndex = 0;
@@ -59,7 +59,7 @@
             // 
             // pbSlika2
             // 
-            this.pbSlika2.Location = new System.Drawing.Point(248, 36);
+            this.pbSlika2.Location = new System.Drawing.Point(277, 36);
             this.pbSlika2.Name = "pbSlika2";
             this.pbSlika2.Size = new System.Drawing.Size(187, 160);
             this.pbSlika2.TabIndex = 0;
@@ -68,7 +68,7 @@
             // labelSlika1
             // 
             this.labelSlika1.AutoSize = true;
-            this.labelSlika1.Location = new System.Drawing.Point(85, 21);
+            this.labelSlika1.Location = new System.Drawing.Point(114, 21);
             this.labelSlika1.Name = "labelSlika1";
             this.labelSlika1.Size = new System.Drawing.Size(39, 13);
             this.labelSlika1.TabIndex = 1;
@@ -77,7 +77,7 @@
             // labelSlika2
             // 
             this.labelSlika2.AutoSize = true;
-            this.labelSlika2.Location = new System.Drawing.Point(322, 20);
+            this.labelSlika2.Location = new System.Drawing.Point(351, 20);
             this.labelSlika2.Name = "labelSlika2";
             this.labelSlika2.Size = new System.Drawing.Size(39, 13);
             this.labelSlika2.TabIndex = 1;
@@ -85,34 +85,39 @@
             // 
             // btnUcitajSliku1
             // 
-            this.btnUcitajSliku1.Location = new System.Drawing.Point(68, 203);
+            this.btnUcitajSliku1.Location = new System.Drawing.Point(97, 203);
             this.btnUcitajSliku1.Name = "btnUcitajSliku1";
             this.btnUcitajSliku1.Size = new System.Drawing.Size(75, 23);
             this.btnUcitajSliku1.TabIndex = 2;
             this.btnUcitajSliku1.Text = "Ucitaj";
             this.btnUcitajSliku1.UseVisualStyleBackColor = true;
+            this.btnUcitajSliku1.Click += new System.EventHandler(this.btnUcitajSliku1_Click);
             // 
             // btnUcitajSliku2
             // 
-            this.btnUcitajSliku2.Location = new System.Drawing.Point(306, 203);
+            this.btnUcitajSliku2.Location = new System.Drawing.Point(335, 203);
             this.btnUcitajSliku2.Name = "btnUcitajSliku2";
             this.btnUcitajSliku2.Size = new System.Drawing.Size(75, 23);
             this.btnUcitajSliku2.TabIndex = 3;
             this.btnUcitajSliku2.Text = "Ucitaj";
             this.btnUcitajSliku2.UseVisualStyleBackColor = true;
+            this.btnUcitajSliku2.Click += new System.EventHandler(this.btnUcitajSliku2_Click);
             // 
             // btnAverageHash
             // 
-            this.btnAverageHash.Location = new System.Drawing.Point(63, 248);
+            this.btnAverageHash.Enabled = false;
+            this.btnAverageHash.Location = new System.Drawing.Point(92, 248);
             this.btnAverageHash.Name = "btnAverageHash";
             this.btnAverageHash.Size = new System.Drawing.Size(75, 59);
             this.btnAverageHash.TabIndex = 4;
             this.btnAverageHash.Text = "Average Hash";
             this.btnAverageHash.UseVisualStyleBackColor = true;
+            this.btnAverageHash.Click += new System.EventHandler(this.btnAverageHash_Click);
             // 
             // btnDifferenceHash
             // 
-            this.btnDifferenceHash.Location = new System.Drawing.Point(144, 248);
+            this.btnDifferenceHash.Enabled = false;
+            this.btnDifferenceHash.Location = new System.Drawing.Point(173, 248);
             this.btnDifferenceHash.Name = "btnDifferenceHash";
             this.btnDifferenceHash.Size = new System.Drawing.Size(75, 59);
             this.btnDifferenceHash.TabIndex = 5;
@@ -121,7 +126,8 @@
             // 
             // btnPerceptualHash
             // 
-            this.btnPerceptualHash.Location = new System.Drawing.Point(225, 248);
+            this.btnPerceptualHash.Enabled = false;
+            this.btnPerceptualHash.Location = new System.Drawing.Point(254, 248);
             this.btnPerceptualHash.Name = "btnPerceptualHash";
             this.btnPerceptualHash.Size = new System.Drawing.Size(75, 59);
             this.btnPerceptualHash.TabIndex = 6;
@@ -130,7 +136,8 @@
             // 
             // btnWaveletHash
             // 
-            this.btnWaveletHash.Location = new System.Drawing.Point(306, 248);
+            this.btnWaveletHash.Enabled = false;
+            this.btnWaveletHash.Location = new System.Drawing.Point(335, 248);
             this.btnWaveletHash.Name = "btnWaveletHash";
             this.btnWaveletHash.Size = new System.Drawing.Size(75, 59);
             this.btnWaveletHash.TabIndex = 7;
@@ -203,7 +210,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 450);
+            this.ClientSize = new System.Drawing.Size(496, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblRazliciti2);
             this.Controls.Add(this.lblRazliciti1);

@@ -1,0 +1,13 @@
+E:\_projekti\Github\Percepcijsko-hesiranje\Aplikacija\Percepcijsko heširanje\WindowsFormsApp1\obj\Debug\Prezentacija.csprojAssemblyReference.cache
+E:\_projekti\Github\Percepcijsko-hesiranje\Aplikacija\Percepcijsko heširanje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Pocetna.resources
+E:\_projekti\Github\Percepcijsko-hesiranje\Aplikacija\Percepcijsko heširanje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\_projekti\Github\Percepcijsko-hesiranje\Aplikacija\Percepcijsko heširanje\WindowsFormsApp1\obj\Debug\Prezentacija.csproj.GenerateResource.cache
+E:\_projekti\Github\Percepcijsko-hesiranje\Aplikacija\Percepcijsko heširanje\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+E:\_projekti\Github\Percepcijsko-hesiranje\Aplikacija\Percepcijsko heširanje\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\_projekti\Github\Percepcijsko-hesiranje\Aplikacija\Percepcijsko heširanje\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+E:\_projekti\Github\Percepcijsko-hesiranje\Aplikacija\Percepcijsko heširanje\WindowsFormsApp1\bin\Debug\BLL.exe
+E:\_projekti\Github\Percepcijsko-hesiranje\Aplikacija\Percepcijsko heširanje\WindowsFormsApp1\bin\Debug\BLL.pdb
+E:\_projekti\Github\Percepcijsko-hesiranje\Aplikacija\Percepcijsko heširanje\WindowsFormsApp1\bin\Debug\BLL.exe.config
+E:\_projekti\Github\Percepcijsko-hesiranje\Aplikacija\Percepcijsko heširanje\WindowsFormsApp1\obj\Debug\Prezentacija.csproj.CopyComplete
+E:\_projekti\Github\Percepcijsko-hesiranje\Aplikacija\Percepcijsko heširanje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\_projekti\Github\Percepcijsko-hesiranje\Aplikacija\Percepcijsko heširanje\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
