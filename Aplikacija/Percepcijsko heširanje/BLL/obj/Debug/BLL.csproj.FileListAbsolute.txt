@@ -5,3 +5,4 @@ E:\_projekti\Github\Percepcijsko-hesiranje\Aplikacija\Percepcijsko heširanje\BL
 E:\_projekti\Github\Percepcijsko-hesiranje\Aplikacija\Percepcijsko heširanje\BLL\obj\Debug\BLL.csproj.GenerateResource.cache
 E:\_projekti\Github\Percepcijsko-hesiranje\Aplikacija\Percepcijsko heširanje\BLL\obj\Debug\BLL.exe
 E:\_projekti\Github\Percepcijsko-hesiranje\Aplikacija\Percepcijsko heširanje\BLL\obj\Debug\BLL.pdb
+E:\_projekti\Github\Percepcijsko-hesiranje\Aplikacija\Percepcijsko heširanje\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
