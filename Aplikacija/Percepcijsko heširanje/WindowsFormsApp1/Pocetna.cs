@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL.Komponente;
+using BLL.Metode;
 namespace WindowsFormsApp1
 {
     public partial class Pocetna : Form
@@ -39,12 +40,6 @@ namespace WindowsFormsApp1
                 btnWaveletHash.Enabled = true;
             }
         }
-        private void PrikaziUcitanuSliku(Slika slika, PictureBox pictureBox,Bitmap bitmap)
-        {
-            bitmap = new Bitmap(slika.GetPutanjaSlike());
-            pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox.Image = bitmap;
-        }
         private void btnUcitajSliku1_Click(object sender, EventArgs e)
         {
             slika1 = new Slika();
@@ -58,7 +53,9 @@ namespace WindowsFormsApp1
                     slika1.SetPutanjaSlike(ucitajSliku.FileName);
                     ucitanaPrvaSlika = true;
                     ProvjeriUcitaneSlike();
-                    PrikaziUcitanuSliku(slika1, pbSlika1, bmpSlika1);
+                    bmpSlika1 = new Bitmap(slika1.GetPutanjaSlike());
+                    pbSlika1.SizeMode = PictureBoxSizeMode.Zoom;
+                    pbSlika1.Image = bmpSlika1;
                 }
             }
         }
@@ -76,9 +73,25 @@ namespace WindowsFormsApp1
                     slika2.SetPutanjaSlike(ucitajSliku.FileName);
                     ucitanaDrugaSlika = true;
                     ProvjeriUcitaneSlike();
-                    PrikaziUcitanuSliku(slika2, pbSlika2, bmpSlika2);
+                    bmpSlika2 = new Bitmap(slika2.GetPutanjaSlike());
+                    pbSlika2.SizeMode = PictureBoxSizeMode.Zoom;
+                    pbSlika2.Image = bmpSlika2;
                 }
             }
+        }
+
+        private void btnAverageHash_Click(object sender, EventArgs e)
+        {
+            AverageHash aHash1 = new AverageHash(bmpSlika1);
+            AverageHash aHash2 = new AverageHash(bmpSlika2);
+            lblHashPrveSlike.Text = "Hash prve slike:" + aHash1.GetHash();
+            lblHashDrugeSlike.Text = "Hash druge slike:" + aHash2.GetHash();
+            int brojIstihBitova = AverageHash.IzracunavanjeSlicnihBitova(aHash1.GetHash(), aHash2.GetHash());
+            lblIstiBitovi.Text = "Isti bitovi:" + " " + brojIstihBitova.ToString();
+            int brojRazlicitihBitova = AverageHash.IzracunavanjeRazlicitihBitova(aHash1.GetHash(), aHash2.GetHash());
+            lblRazliciti1.Text = brojRazlicitihBitova.ToString();
+            double prosjek = AverageHash.IzracunajPostotakSlicnosti(brojIstihBitova, brojRazlicitihBitova, aHash1.GetHash().Length);
+            lblRazliciti2.Text = prosjek.ToString() + "%";
         }
     }
 }
