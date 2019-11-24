@@ -77,10 +77,5 @@ namespace BLL.Metode
                 hashVrijednost = rHashVrijednost + cHashVrijednost;
             }
         }
-        /// <summary>
-        /// Funkcija vraća hash vrijednost za određenu sliku prosljeđenu preko konstruktora.
-        /// </summary>
-        /// <returns>Hash vrijednost slike.</returns>
-
     }
 }
