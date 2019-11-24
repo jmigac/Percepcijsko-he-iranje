@@ -123,6 +123,7 @@
             this.btnDifferenceHash.TabIndex = 5;
             this.btnDifferenceHash.Text = "Difference Hash";
             this.btnDifferenceHash.UseVisualStyleBackColor = true;
+            this.btnDifferenceHash.Click += new System.EventHandler(this.btnDifferenceHash_Click);
             // 
             // btnPerceptualHash
             // 
