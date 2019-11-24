@@ -61,9 +61,5 @@ namespace BLL.Metode
                 }
             }
         }
-        /// <summary>
-        /// Funkcija vraća hash vrijednost za izračunati objekt AverageHash.
-        /// </summary>
-        /// <returns>String hash vrijednosti.</returns>
     }
 }
