@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -89,6 +90,20 @@ namespace BLL.Metode
                 prosjek = 100;
             }
             return prosjek;
+        }
+        /// <summary>
+        /// Funkcija vraća bitove iz niza bytova u string obliku.
+        /// </summary>
+        /// <param name="byteZapis">Niz bitova</param>
+        /// <returns>String bitova</returns>
+        public String GetBitsFromBytes(BitArray bitZapis)
+        {
+            String outputString = "";
+            for (int i = 0; i < bitZapis.Length; i++)
+            {
+                outputString += bitZapis.Get(i) ? "1" : "0";
+            }
+            return outputString;
         }
     }
 }

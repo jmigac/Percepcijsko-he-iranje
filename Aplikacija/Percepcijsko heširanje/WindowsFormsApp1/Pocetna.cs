@@ -19,6 +19,10 @@ namespace WindowsFormsApp1
         private Slika slika2;
         private Bitmap bmpSlika1;
         private Bitmap bmpSlika2;
+        private const double w0 = 0.5;
+        private const double w1 = -0.5;
+        private const double s0 = 0.5;
+        private const double s1 = 0.5;
         public Pocetna()
         {
             InitializeComponent();
@@ -115,7 +119,6 @@ namespace WindowsFormsApp1
                 lblRazliciti1.Text = brojRazlicitihBitova.ToString();
                 double prosjek = DifferenceHash.IzracunajPostotakSlicnosti(brojIstihBitova, brojRazlicitihBitova, dHash1.GetHash().Length);
                 lblRazliciti2.Text = prosjek.ToString() + "%";
-
             }
             catch (Exception ex)
             {
@@ -127,12 +130,21 @@ namespace WindowsFormsApp1
         {
             try
             {
-                
+                PerceptionHash pHash1 = new PerceptionHash(bmpSlika1);
+                PerceptionHash pHash2 = new PerceptionHash(bmpSlika2);
+                lblHashPrveSlike.Text = "Hash prve slike:  " + pHash1.GetHash();
+                lblHashDrugeSlike.Text = "Hash druge slike:" + pHash2.GetHash();
+                int brojIstihBitova = PerceptionHash.IzracunavanjeSlicnihBitova(pHash1.GetHash(), pHash2.GetHash());
+                lblIstiBitovi.Text = "Isti bitovi:" + " " + brojIstihBitova.ToString();
+                int brojRazlicitihBitova = PerceptionHash.IzracunavanjeRazlicitihBitova(pHash1.GetHash(), pHash2.GetHash());
+                lblRazliciti1.Text = brojRazlicitihBitova.ToString();
+                double prosjek = PerceptionHash.IzracunajPostotakSlicnosti(brojIstihBitova, brojRazlicitihBitova, pHash1.GetHash().Length);
+                lblRazliciti2.Text = (int)PerceptionHash.IzracunajSlicnostPercepcijskogHasha(pHash1, pHash2) + "%";
             }
             catch (Exception ex)
             {
 
-                throw;
+                MessageBox.Show(ex.Message, "Niste uploadali sliku!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }
