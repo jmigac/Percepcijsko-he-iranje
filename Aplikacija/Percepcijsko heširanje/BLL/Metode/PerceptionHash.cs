@@ -8,5 +8,6 @@ namespace BLL.Metode
 {
     public class PerceptionHash : Hash
     {
+        public static 
     }
 }

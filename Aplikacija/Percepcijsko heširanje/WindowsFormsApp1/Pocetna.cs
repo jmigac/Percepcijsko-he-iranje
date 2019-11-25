@@ -122,5 +122,18 @@ namespace WindowsFormsApp1
                 MessageBox.Show(ex.Message, "Niste uploadali sliku!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void btnPerceptualHash_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
     }
 }
