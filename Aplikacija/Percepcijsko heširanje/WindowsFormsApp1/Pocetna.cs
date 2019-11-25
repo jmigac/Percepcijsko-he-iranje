@@ -19,6 +19,7 @@ namespace WindowsFormsApp1
         private Slika slika2;
         private Bitmap bmpSlika1;
         private Bitmap bmpSlika2;
+
         public Pocetna()
         {
             InitializeComponent();
@@ -115,10 +116,53 @@ namespace WindowsFormsApp1
                 lblRazliciti1.Text = brojRazlicitihBitova.ToString();
                 double prosjek = DifferenceHash.IzracunajPostotakSlicnosti(brojIstihBitova, brojRazlicitihBitova, dHash1.GetHash().Length);
                 lblRazliciti2.Text = prosjek.ToString() + "%";
-
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.Message, "Niste uploadali sliku!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnPerceptualHash_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                PerceptionHash pHash1 = new PerceptionHash(bmpSlika1);
+                PerceptionHash pHash2 = new PerceptionHash(bmpSlika2);
+                lblHashPrveSlike.Text = "Hash prve slike:  " + pHash1.GetHash();
+                lblHashDrugeSlike.Text = "Hash druge slike:" + pHash2.GetHash();
+                int brojIstihBitova = PerceptionHash.IzracunavanjeSlicnihBitova(pHash1.GetHash(), pHash2.GetHash());
+                lblIstiBitovi.Text = "Isti bitovi:" + " " + brojIstihBitova.ToString();
+                int brojRazlicitihBitova = PerceptionHash.IzracunavanjeRazlicitihBitova(pHash1.GetHash(), pHash2.GetHash());
+                lblRazliciti1.Text = brojRazlicitihBitova.ToString();
+                double prosjek = PerceptionHash.IzracunajPostotakSlicnosti(brojIstihBitova, brojRazlicitihBitova, pHash1.GetHash().Length);
+                lblRazliciti2.Text = (int)PerceptionHash.IzracunajSlicnostPercepcijskogHasha(pHash1, pHash2) + "%";
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "Niste uploadali sliku!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnWaveletHash_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                WaveletHash wHash1 = new WaveletHash(bmpSlika1);
+                WaveletHash wHash2 = new WaveletHash(bmpSlika2);
+                lblHashPrveSlike.Text = "Hash prve slike:  " + wHash1.GetHash();
+                lblHashDrugeSlike.Text = "Hash druge slike:" + wHash2.GetHash();
+                int brojIstihBitova = WaveletHash.IzracunavanjeSlicnihBitova(wHash1.GetHash(), wHash2.GetHash());
+                lblIstiBitovi.Text = "Isti bitovi:" + " " + brojIstihBitova.ToString();
+                int brojRazlicitihBitova = WaveletHash.IzracunavanjeRazlicitihBitova(wHash1.GetHash(), wHash2.GetHash());
+                lblRazliciti1.Text = brojRazlicitihBitova.ToString();
+                double prosjek = WaveletHash.IzracunajPostotakSlicnosti(brojIstihBitova, brojRazlicitihBitova, wHash1.GetHash().Length);
+                lblRazliciti2.Text = prosjek.ToString() + "%";
+            }
+            catch (Exception ex)
+            {
+
                 MessageBox.Show(ex.Message, "Niste uploadali sliku!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }

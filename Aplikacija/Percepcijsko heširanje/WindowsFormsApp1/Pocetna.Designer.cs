@@ -134,6 +134,7 @@
             this.btnPerceptualHash.TabIndex = 6;
             this.btnPerceptualHash.Text = "Perception Hash";
             this.btnPerceptualHash.UseVisualStyleBackColor = true;
+            this.btnPerceptualHash.Click += new System.EventHandler(this.btnPerceptualHash_Click);
             // 
             // btnWaveletHash
             // 
@@ -144,6 +145,7 @@
             this.btnWaveletHash.TabIndex = 7;
             this.btnWaveletHash.Text = "Wavelet Hash";
             this.btnWaveletHash.UseVisualStyleBackColor = true;
+            this.btnWaveletHash.Click += new System.EventHandler(this.btnWaveletHash_Click);
             // 
             // lblHashPrveSlike
             // 
