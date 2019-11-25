@@ -56,6 +56,8 @@
     <Compile Include="Metode\AverageHash.cs" />
     <Compile Include="Metode\DifferenceHash.cs" />
     <Compile Include="Metode\Hash.cs" />
+    <Compile Include="Metode\PerceptionHash.cs" />
+    <Compile Include="Metode\WaveletHash.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
