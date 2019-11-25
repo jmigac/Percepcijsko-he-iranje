@@ -145,6 +145,7 @@
             this.btnWaveletHash.TabIndex = 7;
             this.btnWaveletHash.Text = "Wavelet Hash";
             this.btnWaveletHash.UseVisualStyleBackColor = true;
+            this.btnWaveletHash.Click += new System.EventHandler(this.btnWaveletHash_Click);
             // 
             // lblHashPrveSlike
             // 
