@@ -4,7 +4,7 @@
 
 Dijagram klasa prikazuje klase koje nasljeđuje atribute i funkcije Hash klase te atribute i metode vlastitih klasa.
 
-[Image]([Image](Dokumentacija/Dijagrami/slika/HashGeneralizacija.jpg))
+[Image](https://github.com/jmigac/Percepcijsko-hesiranje/blob/aca31519d984340a662597fe52f24c6e37303cf4/Dokumentacija/Dijagrami/slika/HashGeneralizacija.jpg)
 
 ### Kontakt
 
