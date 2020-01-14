@@ -49,7 +49,7 @@ namespace BLL.Metode
                     boja = pomocnaBitmapa.GetPixel(i, j);
                     Crvena[i, j] = (double)Scale(0, 255, -1, 1, boja.R);
                     Zelena[i,j] = (double)Scale(0, 255, -1, 1, boja.G);
-                    Plava[i,j] = (double)Scale(0, 255, -1, 1, boja.G);
+                    Plava[i,j] = (double)Scale(0, 255, -1, 1, boja.B);
                 }
             }
             // FWT funkcije bez uporabe zbog ne korištenja prikaza navedenog algoritma na djelu.
