@@ -52,7 +52,6 @@ namespace BLL.Metode
                     Plava[i,j] = (double)Scale(0, 255, -1, 1, boja.B);
                 }
             }
-            // FWT funkcije bez uporabe zbog ne korištenja prikaza navedenog algoritma na djelu.
             FWT(Crvena, 4);
             FWT(Zelena, 4);
             FWT(Plava, 4);
