@@ -116,6 +116,7 @@ namespace WindowsFormsApp1
                 lblRazliciti1.Text = brojRazlicitihBitova.ToString();
                 double prosjek = DifferenceHash.IzracunajPostotakSlicnosti(brojIstihBitova, brojRazlicitihBitova, dHash1.GetHash().Length);
                 lblRazliciti2.Text = prosjek.ToString() + "%";
+                
             }
             catch (Exception ex)
             {
